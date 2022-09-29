@@ -67,3 +67,13 @@ If a product is added to the cart multiple times, but with colors different, it 
 # Data Validation
 
 For POST routes, the contact object sent to the server contains the fields firstName, lastName, address, city and email. The array of products sent to the back-end is a array of product-ID strings. The types of these fields and their presence are validated before sending data to the server.
+
+# Skills
+
+● Create a test plan for an application
+
+● Validate data from external sources
+
+● Interact with a web service with JavaScript
+
+● Handle JavaScript events
