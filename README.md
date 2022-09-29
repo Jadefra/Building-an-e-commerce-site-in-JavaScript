@@ -24,7 +24,9 @@ This page presents all the products returned by the API.
 For each product, the image is displayed, as well as its name and the beginning of its description.
 By clicking on the product, the user will be redirected to the product page to consult this one in more detail.
 
-### ● A “product” page that displays (dynamically) product details on which the user clicked from the home page. From this page, the user can select a quantity, a color, and add the product to their basket.
+### ● A “product” page ###
+
+That displays (dynamically) product details on which the user clicked from the home page. From this page, the user can select a quantity, a color, and add the product to their basket.
 
 ###● A “basket” page ### 
 
