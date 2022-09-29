@@ -38,7 +38,7 @@ This contains several parts:
 
 ○ Item prices are not stored locally. Data stored locally are not secure and the user could then change the price himself.
 
-● A “confirmation” page:
+### ● A “confirmation” page: ###
 
 ○ An order confirmation message, thanking the user for his order, and indicating the order identifier sent by the API. This number is not stored anywhere.
 
