@@ -28,7 +28,7 @@ By clicking on the product, the user will be redirected to the product page to c
 
 That displays (dynamically) product details on which the user clicked from the home page. From this page, the user can select a quantity, a color, and add the product to their basket.
 
-###● A “basket” page ### 
+### ● A “basket” page ### 
 
 This contains several parts:
 
