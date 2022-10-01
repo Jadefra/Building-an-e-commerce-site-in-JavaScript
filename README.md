@@ -70,6 +70,38 @@ If a product is added to the cart multiple times, but with colors different, it 
 
 For POST routes, the contact object sent to the server contains the fields firstName, lastName, address, city and email. The array of products sent to the back-end is a array of product-ID strings. The types of these fields and their presence are validated before sending data to the server.
 
+# Steps
+
+- All products are integrated from the API into the home page of the website.
+- Request the API to request all the products;
+- Retrieve the response sent, and browse it to insert each element (each product) in the home page
+- Display products dynamically, not statically.
+- The link between a product on the home page and the Product page
+- Get organized on the home page so that, once on the Product page, you know which of the different API products to display.
+- Open a Product page knowing which product to display with URLSearchParams
+- Each of the products on the home page, parameter of the “a” tag and its “href” attribute.
+- Retrieve the id of the product to display in order to know which product we are talking about in the URL (URLSearchParams)
+- Insert a product and its details in the Product page (retrieve a single product, not all the products.)
+- Add products to the cart with an array that would contain three things:
+- Product ID
+- The quantity of the product
+- Product color 
+Use localStorage to be able to access this array from the Cart page.
+- When a product is added to the basket, if it was not already present in the basket, a new element is added to the array.
+- When adding a product to the cart, if it was already present in the cart (same id + same color), you simply increment the quantity of the corresponding product in the array.
+- Display a summary table of purchases in the Cart page
+- From the Basket page, retrieve the basket (the array) via localStorage.
+- Manage the modification and deletion of products in the Shopping Cart page
+- Concerning the modification, to use the modification event (addEventListener of type change) to observe the change in quantity.
+- Modify the DOM, but also localStorage, otherwise the modifications made in the basket will not be kept
+- To order
+- Retrieve and analyze the data entered by the user in the form.
+- Display an error message if needed
+- Show order number
+- Make a POST request on the API
+- Retrieve the command id in the response
+- Redirect the user to the Confirmation page, passing the order id in the URL, in order to display the order number.
+
 # Skills
 
 ● Create a test plan for an application
