@@ -73,35 +73,40 @@ For POST routes, the contact object sent to the server contains the fields first
 
 # Steps
 
-### All products are integrated from the API into the home page of the website ###
+### Step 1 : All products are integrated from the API into the home page of the website ###
 - Request the API to request all the products
 - Retrieve the response sent, and browse it to insert each element (each product) in the home page
 - Display products dynamically, not statically
-### The link between a product on the home page and the Product page ###
+### Step 2 : The link between a product on the home page and the Product page ###
 - Get organized on the home page so that, once on the Product page, you know which of the different API products to display.
 - Open a Product page knowing which product to display with URLSearchParams
 - Each of the products on the home page, parameter of the “a” tag and its “href” attribute
-### Retrieve the id of the product to display in order to know which product we are talking about in the URL (URLSearchParams) ###
+### Step 3 : Retrieve the id of the product to display in order to know which product we are talking about in the URL (URLSearchParams) ###
 - Insert a product and its details in the Product page (retrieve a single product, not all the products.)
-### Add products to the cart with an array that would contain three things: ###
+### Step 4 : Add products to the cart with an array that would contain three things: ###
 - Product ID
 - The quantity of the product
 - Product color 
 Use localStorage to be able to access this array from the Cart page.
 - When a product is added to the basket, if it was not already present in the basket, a new element is added to the array.
 - When adding a product to the cart, if it was already present in the cart (same id + same color), you simply increment the quantity of the corresponding product in the array.
-### Display a summary table of purchases in the Cart page ###
+### Step 5 : Display a summary table of purchases in the Cart page ###
 - From the Basket page, retrieve the basket (the array) via localStorage.
-### Manage the modification and deletion of products in the Shopping Cart page ###
+### Step 6 : Manage the modification and deletion of products in the Shopping Cart page ###
 - Concerning the modification, to use the modification event (addEventListener of type change) to observe the change in quantity.
+- Also, the Element.closest() method should make it possible to target the product you want to delete (or modify the quantity) thanks to its identifier and its color.
 - Modify the DOM, but also localStorage, otherwise the modifications made in the basket will not be kept
-### To order ###
+### Step 7 : To order ###
 - Retrieve and analyze the data entered by the user in the form.
-- Display an error message if needed
-### Show order number ###
-- Make a POST request on the API
-- Retrieve the command id in the response
-- Redirect the user to the Confirmation page, passing the order id in the URL, in order to display the order number.
+- Display an error message if necessary (for example when a user fills in “hello” in the “e-mail” field).
+- Create a contact object (from the form data) and a table of products.
+- When verifying data through regexes, conduct tests to verify that the regexes are working properly.
+### Step 8 : Show order number ###
+- A POST request on the API and retrieve the identifier of command in the response.
+- Redirect the user to the Confirmation page, passing the id of command in the URL, with the aim of displaying the number of ordered.
+- If this number is displayed, it should not be kept / stored.
+### Step 12: Set up the acceptance test plan ###
+The website being ready, a test plan was carried out in order to verify that all the functionalities have been been implemented, and that these are functional.
 
 # Skills
 
