@@ -74,13 +74,13 @@ For POST routes, the contact object sent to the server contains the fields first
 # Steps
 
 ### All products are integrated from the API into the home page of the website. ###
-- Request the API to request all the products;
+- Request the API to request all the products
 - Retrieve the response sent, and browse it to insert each element (each product) in the home page
-- Display products dynamically, not statically.
+- Display products dynamically, not statically
 ### The link between a product on the home page and the Product page ###
 - Get organized on the home page so that, once on the Product page, you know which of the different API products to display.
 - Open a Product page knowing which product to display with URLSearchParams
-- Each of the products on the home page, parameter of the “a” tag and its “href” attribute.
+- Each of the products on the home page, parameter of the “a” tag and its “href” attribute
 ### Retrieve the id of the product to display in order to know which product we are talking about in the URL (URLSearchParams) ###
 - Insert a product and its details in the Product page (retrieve a single product, not all the products.)
 ### Add products to the cart with an array that would contain three things: ###
