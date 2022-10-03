@@ -73,7 +73,7 @@ For POST routes, the contact object sent to the server contains the fields first
 
 # Steps
 
-### All products are integrated from the API into the home page of the website. ###
+### All products are integrated from the API into the home page of the website ###
 - Request the API to request all the products
 - Retrieve the response sent, and browse it to insert each element (each product) in the home page
 - Display products dynamically, not statically
