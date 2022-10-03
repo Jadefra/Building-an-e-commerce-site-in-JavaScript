@@ -50,7 +50,8 @@ Plan a suite of acceptance tests to cover all the features listed.
 
 # The source code
 
-The source code be split into several reusable functions (named). A function must be short and meet a specific need. You don't have to have long functions that meets multiple needs at once. Example: he would not be accepted to put a single function in place to collect, process and send data.
+The source code be split into several reusable functions (named). A function must be short and meet a specific need. It should not be
+have long functions that would meet several needs at the same time. Example: it would not be accepted to put a single function in place to collect, process and send data.
 
 # API
 
